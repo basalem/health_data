@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Health Data Project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">MyBlog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+          <a class="nav-item nav-link " href="/">Home</a>
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/logout">logout</a>
+      </div>
+    </div>
+  </nav>
+
+<h3> Welcome {{session.username}} to My Health Data Analysis Webpage  </h3>
+
+<a href="/logout">Logout</a>
+  <div class = "container-fluid">
+    <h3> Sleeping Data</h3>
+    <div class = "row"> 
+      <div class ="col-sm-9 left"><img class="img-fluid img-thumbnail" src="../static/sleep_data1.JPG">
+      </div>
+      <div class ="col-sm-3 right"> 
+        <p class="lead">
+            The exploratory visualization summary plots from the sleeping data shows a health 
+            sleeping habit. An early consistent bedtime hours ranged from 9 pm to 11 pm are commonly scheduled by the participant. 
+            These early bedtime hours result in getting the mininmum required of enough sleep hour ranged from 7 to 9 hours. This health 
+            habit can also be seen in a daily wake up time for an individual who sleeps early and wake up early.  
+            </p>
+      </div>
+    </div>
+
+    <h3> Exercise Data</h3>
+    <div class = "row"> 
+        <div class ="col-sm-9 left"><img class="img-fluid img-thumbnail" src="../static/exercise_data.JPG"></div>
+        <div class ="col-sm-3 right"> 
+          <p class="lead">
+              The exercise data visualization analysis give us an insight about the participant exercise program. There is a variety in
+              the exercise routine which can be seen that the participant is avoiding to get bored. An interesting trend can be seen in the exercise
+              time where the most common exercise hours are splitted into two time periods. The first time period is in the morning (11 am and noon) and
+              in the evening (9 pm, 10 pm and 11 pm). For the morninng hours, probably the participant goes for a walk or swimming during 
+              lunch break to change the routine and come back active to continue office work. For the evening hours, probably the guy is doing 
+              light work out at home before sleeping to get his muscle and body tired and to sleep properly, more walking and running in the
+              walking machine. Finally, the timeline plot shows a regular exercise habit even though during travel time. This guy is having an 
+              active life style.
+          </p>
+
+        </div>
+      </div>
+
+      <h3> Heart Rate Data</h3>
+      <div class = "row">  
+          <div class ="col-sm-9 left"><img class="img-fluid img-thumbnail" src="../static/heart_data.JPG"></div>
+          <div class ="col-sm-3 right"> 
+            <p class="lead">
+                The heart rate data shows a good heart rate distribution where most of the data measure at rest and all are below the average. 
+                In general, a low heart rate at rest implies more efficient heart function and a better cariovascular fittness. 
+                In addition, the frequency of measuring time of the heart rate plot implies this person is always testing his heart rate in the the morning, probably right after he wakes up.
+                According to healthline, "The best time to test your resting heart rate is first thing in the morning, before you’ve gotten out of bed — ideally after a good night’s sleep". 
+                There are some evening hours where participant is testing his heart rate, I would say that he is testing his heart rate sometime before sleeping and then again when he wakeup in order to measure difference. 
+                Basically, the participant is aware about some useful tips regarding heart rate.
+            </p>
+          </div>
+        </div>
+
+        <h3> Conclusion & Verdict</h3>
+        <p>
+            Overall, I can clearly see that all points are connected to one positive verdict. Early sleeping leads to excellent sleeping quality, sleep quality leads to getting enough sleeping hours.
+            Getting enough sleeping hours leads to high degree physical performance as described and was seen in the exercise data. Good sleeping quality and active life style lead to better cariovascular fittness.
+            I can say that this person is an active person, always full with energy, well orgnized with his exercise and sleeping schedules and in a good shape.  
+ 
+        </p>
+  </div>
+</body>
+</html>
